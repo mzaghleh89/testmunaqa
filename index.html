@@ -18,16 +18,19 @@
       background-color: #fff;
       color: #333;
     }
-    .quote-banner {
-  width: 100%;
-  background-color: #e8f5e9; /* light green */
-  color: #2e7d32; /* deep green text */
-  text-align: center;
-  padding: 1rem 2rem;
+ #quote {
+  margin-bottom: 2rem;
+}
+.quote-container {
+  background-color: #e8f5e9;
+  border-left: 6px solid #4caf50;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
   font-style: italic;
   font-size: 1.1rem;
-  font-weight: 500;
-  border-bottom: 2px solid #c8e6c9;
+  color: #2e7d32;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.1);
 }
     nav {
       width: 250px;
@@ -168,9 +171,6 @@
   </style>
 </head>
 <body>
-  <div class="quote-banner">
-  <p>"Quality is never an accident; it is always the result of intelligent effort." – John Ruskin</p>
-</div>
   <nav>
      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHCufRoWWra8Q/profile-displayphoto-shrink_400_400/B4EZRHeF0dHgAg-/0/1736365858713?e=1755129600&v=beta&t=A6a7ALxzzA7vazFObjpt03X74ucUOPOYmVt6CiOZNA4" alt="Muna Abuzaghleh" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 1rem;" />
     <h1>Muna Abuzaghleh</h1>
@@ -184,6 +184,13 @@
     <a href="#contact">Contact</a>
   </nav>
   <div class="main">
+    <section id="quote">
+  <div class="quote-container">
+    <blockquote>
+      “Quality is never an accident; it is always the result of intelligent effort.”
+    </blockquote>
+  </div>
+</section>
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a passionate Software QA Team Lead with 10+ years of hands-on experience in testing strategies, automation frameworks, and cross-functional collaboration. I specialize in both manual and automated testing across SaaS, eCommerce, healthcare, and billing domains.</p>
