@@ -3,121 +3,188 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muna Abuzaghleh | QA Portfolio</title>
+  <title>Muna Abuzaghleh </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
       display: flex;
-      background-color: white;
+      background-color: #fff;
+      color: #333;
     }
     nav {
-      width: 220px;
-      background-color: #f5f5f5;
-      padding: 20px;
+      width: 250px;
       height: 100vh;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 2rem 1rem;
       position: fixed;
-      overflow-y: auto;
     }
-    nav h2 {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+    nav h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
     }
     nav a {
       display: block;
-      color: #333;
+      color: #aaa;
       text-decoration: none;
-      margin: 10px 0;
-      font-weight: bold;
+      margin: 1rem 0;
+      transition: color 0.3s;
     }
     nav a:hover {
-      color: #007acc;
+      color: #fff;
     }
-    main {
-      margin-left: 240px;
-      padding: 30px;
-      width: calc(100% - 240px);
+    .main {
+      margin-left: 250px;
+      padding: 2rem;
+      flex: 1;
     }
     section {
-      padding: 60px 0;
-      border-bottom: 1px solid #ddd;
+      margin-bottom: 4rem;
     }
-    .progress-bar {
+    h2 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    .skill {
+      margin-bottom: 1rem;
+    }
+    .skill-bar {
       height: 10px;
-      background-color: #eee;
+      background: #e0e0e0;
       border-radius: 5px;
       overflow: hidden;
-      margin-top: 5px;
     }
-    .progress-fill {
+    .skill-fill {
       height: 100%;
-      background-color: #007acc;
-      width: 0;
+      background: #4caf50;
     }
-    .certificates img {
-      max-width: 150px;
-      margin: 10px;
+    .certs img {
+      width: 150px;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    .exp-item {
+      margin-bottom: 2rem;
+    }
+    .exp-item h3 {
+      margin-bottom: 0.25rem;
+    }
+    .exp-item small {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <nav>
-    <h2>Muna Abuzaghleh</h2>
+    <h1>Muna Abuzaghleh</h1>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#certifications">Certifications</a>
     <a href="#experience">Experience</a>
+    <a href="#industries">Industries</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
   </nav>
-  <main>
+  <div class="main">
     <section id="about">
-      <h1>About Me</h1>
-      <p>Senior QA Engineer with over 10 years of experience across web, mobile, and API testing. Hands-on leader in test automation and quality assurance for healthcare, finance, HRMS, and eCommerce systems.</p>
+      <h2>About Me</h2>
+      <p>I'm a passionate Software QA Team Lead with 10+ years of hands-on experience in testing strategies, automation frameworks, and cross-functional collaboration. I specialize in both manual and automated testing across SaaS, eCommerce, healthcare, and billing domains.</p>
     </section>
 
     <section id="skills">
-      <h1>Skills</h1>
-      <div>
-        <p>Java</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
-        <p>Selenium WebDriver</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
-        <p>API Testing (Postman/Swagger)</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
-        <p>SQL</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
-        <p>CI/CD (Jenkins)</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
-        <p>Cypress / Playwright</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
-        <p>Git</p>
-        <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+      <h2>Skills</h2>
+      <div class="skill">
+        <strong>Java</strong>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <strong>Selenium WebDriver</strong>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <strong>Postman & API Testing</strong>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+      </div>
+      <div class="skill">
+        <strong>CI/CD (Jenkins, Git)</strong>
+        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
       </div>
     </section>
 
     <section id="certifications">
-      <h1>Certifications</h1>
-      <div class="certificates">
-        <img src="cert-istqb.png" alt="ISTQB" />
-        <img src="cert-itil.png" alt="ITIL" />
-        <img src="cert-java.png" alt="Oracle Java Associate" />
+      <h2>Certifications</h2>
+      <div class="certs">
+        <img src="certs/istqb.png" alt="ISTQB Certification">
+        <img src="certs/oracle-java.png" alt="Oracle Java Associate">
+        <img src="certs/itil.png" alt="ITIL">
       </div>
     </section>
 
     <section id="experience">
-      <h1>Professional Experience</h1>
-      <p><strong>Blulogix</strong> – QA Team Lead | Oct 2021 – Present</p>
+      <h2>Experience</h2>
+      <div class="exp-item">
+        <h3>Blulogix - Software QA Lead</h3>
+        <small>Oct 2021 – Present</small>
+        <ul>
+          <li>Led QA for billing SaaS platform with automation, CI/CD, and API testing.</li>
+          <li>Streamlined testing across Salesforce, NetSuite, and QuickBooks integrations.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <h3>Aumet - QA Team Lead</h3>
+        <small>Dec 2020 – Sep 2021</small>
+        <ul>
+          <li>Built test strategies for healthcare marketplace and POS systems.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <h3>Mawdoo3 - QA Team Lead</h3>
+        <small>Nov 2019 – Dec 2020</small>
+        <ul>
+          <li>Managed CMS and eLearning platforms, including AEM-based content QA.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="industries">
+      <h2>Industries</h2>
       <ul>
-        <li>Led QA for a Billing SaaS platform, implemented test automation, API testing, and CI/CD pipelines.</li>
-      </ul>
-      <p><strong>Aumet</strong> – QA Team Lead | Dec 2020 – Sep 2021</p>
-      <ul>
-        <li>Oversaw QA for a healthcare marketplace and POS system, refined QA strategy and execution.</li>
-      </ul>
-      <p><strong>Mawdoo3</strong> – QA Team Lead & Senior QA | Nov 2018 – Dec 2020</p>
-      <ul>
-        <li>Managed AEM-based CMS testing, test automation, accessibility validation, and performance tuning.</li>
+        <li>Healthcare and eHealth Platforms</li>
+        <li>eLearning and Digital Content</li>
+        <li>eCommerce and SaaS Billing Systems</li>
+        <li>Financial Technology and Payment Solutions</li>
+        <li>Human Resources and Payroll Systems</li>
       </ul>
     </section>
-  </main>
+
+    <section id="testimonials">
+      <h2>What People Say</h2>
+      <blockquote>
+        “Muna is one of the most detail-oriented QA professionals I've worked with. Her testing rigor and automation expertise raised our product quality significantly.” — Former Manager
+      </blockquote>
+      <blockquote>
+        “Always proactive and hands-on, Muna played a critical role in improving our CI/CD process and reducing defects in production.” — QA Team Member
+      </blockquote>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:abuzaghleh.muna@gmail.com">abuzaghleh.muna@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mzaghleh" target="_blank">linkedin.com/in/mzaghleh</a></p>
+    </section>
+  </div>
 </body>
 </html>
