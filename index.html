@@ -18,16 +18,27 @@
       background-color: #fff;
       color: #333;
     }
+    .quote-banner {
+  width: 100%;
+  background-color: #e8f5e9; /* light green */
+  color: #2e7d32; /* deep green text */
+  text-align: center;
+  padding: 1rem 2rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-bottom: 2px solid #c8e6c9;
+}
     nav {
       width: 250px;
-      height: 100vh;
-      background-color: #1a1a1a;
-      color: white;
-      padding: 2rem 1rem;
-      position: fixed;
-      top: 0;
-      left: 0;
-      overflow-y: auto;
+  height: 100vh;
+  background-color: #2e7d32; /* 🌿 Nice green */
+  color: white;
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
     }
     nav h1 {
       font-size: 1.5rem;
@@ -92,6 +103,46 @@
       margin-bottom: 1rem;
       font-style: italic;
     }
+    .testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial-card {
+  background-color: #f0fdf4; /* light greenish */
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #4caf50;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.testimonial-card h4 {
+  margin: 0.25rem 0 0;
+  color: #2e7d32;
+}
+
+.testimonial-card small {
+  color: #666;
+}
     @media (max-width: 768px) {
       body {
         flex-direction: column;
@@ -117,6 +168,9 @@
   </style>
 </head>
 <body>
+  <div class="quote-banner">
+  <p>"Quality is never an accident; it is always the result of intelligent effort." – John Ruskin</p>
+</div>
   <nav>
      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHCufRoWWra8Q/profile-displayphoto-shrink_400_400/B4EZRHeF0dHgAg-/0/1736365858713?e=1755129600&v=beta&t=A6a7ALxzzA7vazFObjpt03X74ucUOPOYmVt6CiOZNA4" alt="Muna Abuzaghleh" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 1rem;" />
     <h1>Muna Abuzaghleh</h1>
@@ -199,20 +253,36 @@
       <h2>Education</h2>
       <div class="exp-item">
         <h3>MBA - Data Analytics</h3>
-        <small>German Jordanian University, 2020 – 2022</small>
+        <small>University of New Haven, 2023 – 2024</small>
         <p>Focused on data-driven decision-making and advanced analytics for IT leadership.</p>
       </div>
       <div class="exp-item">
         <h3>Bachelor of Computer Science</h3>
-        <small>University of Jordan, 2009 – 2013</small>
+        <small>University of Jordan, 2007 – 2012</small>
         <p>Specialized in Software Engineering with focus on QA and testing methodologies.</p>
       </div>
     </section>
 
     <section id="testimonials">
-      <h2>What People Say</h2>
-      <div class="testimonial">“Muna has a sharp eye for quality and a mindset that always looks for better ways to improve QA processes.”</div>
-      <div class="testimonial">“Her leadership in cross-team collaboration and attention to detail have been instrumental to our success.”</div>
+  <h2>What People Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQFjEzmG9mCx9w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693396138021?e=1755129600&v=beta&t=eFUEaVaeRynnlOMUwwKWOxFmPDKFZi9HspX4uMq_ih0" alt="Person 1">
+      <p>“It has been a pleasure working alongside with Muna, I can honestly say that she is a valued team member and key team player. Muna is cooperative and assistive with anything that the team needs, and she exhibits a passion for team development.
+
+Muna excels at supervising, guiding and motivating other members of the team. She is a natural leader and problem solver, easily identifying and proposing solutions to any road bumps that the team hits along the way.
+
+I am so glad to have worked with you and I wish to work together again in the future. ”</p>
+      <h4>Ammar Alsadeq</h4>
+      <small>Senior Quality Automation Engineer at Uber</small>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHSGp5NkwvWeA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1697607358566?e=1755129600&v=beta&t=RhF0X71t_vCrMUCn5bfX3BM4aFdYX4xthT6zr2oouEY" alt="Person 2">
+      <p>“I highly recommend Muna as an important member in the Quality team, Muna is very passionate about her work.”</p>
+      <h4>Mohammad Younis</h4>
+      <small>Product Director at Mawdoo3</small>
+    </div>
+  </div>
     </section>
 
     <section id="contact">
