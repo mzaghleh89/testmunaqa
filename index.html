@@ -29,20 +29,44 @@
   display: flex;
   justify-content: center;
     }
- #quote {
-  margin-bottom: 2rem;
+.quote-modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f3f4f6; /* Light grey background */
 }
-.quote-container {
-  background-color: #e8f5e9;
-  border-left: 6px solid #4caf50;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
+
+.quote-box {
+  max-width: 800px;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 2.5rem;
+  color: #0077b5; /* Match LinkedIn / portfolio highlight */
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-size: 1.5rem;
   font-style: italic;
-  font-size: 1.1rem;
-  color: #2e7d32;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.1);
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
 }
+
+.quote-author {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #777;
+}
+
     nav {
   width: 250px;
   position: sticky;
@@ -504,7 +528,7 @@ nav.col-md-3 {
 	  .contact-section {
   padding: 4rem 2rem;
   background-color: #f8f9fa;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-section h2 {
@@ -571,13 +595,16 @@ nav.col-md-3 {
  </nav>
 
   <div class="main">
-    <section id="quote">
-      <div class="quote-container">
-      <blockquote>
+    <section id="quote" class="quote-modern">
+  <div class="quote-box animate-box fade-in">
+    <i class="fas fa-quote-left quote-icon"></i>
+    <blockquote>
       “Quality is never an accident; it is always the result of intelligent effort.”
-      </blockquote>
-      </div>
+    </blockquote>
+    <p class="quote-author">— John Ruskin</p>
+  </div>
     </section>
+	  
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a passionate Software QA Team Lead with 10+ years of hands-on experience in testing strategies, automation frameworks, and cross-functional collaboration. I specialize in both manual and automated testing across SaaS, eCommerce, healthcare, and billing domains.</p>
