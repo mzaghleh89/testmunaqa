@@ -29,6 +29,14 @@
   display: flex;
   justify-content: center;
     }
+	  #quote {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
 .quote-modern {
   display: flex;
   justify-content: center;
@@ -53,12 +61,26 @@
   margin-bottom: 1rem;
 }
 
-blockquote {
-  font-size: 1.5rem;
+#quote blockquote {
+  font-size: 1.75rem;
   font-style: italic;
-  line-height: 1.6;
-  color: #333;
+  color: #334e68; /* dark blue-gray */
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+#quote blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #627d98;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  font-family: serif;
 }
 
 .quote-author {
