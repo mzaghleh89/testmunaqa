@@ -14,60 +14,7 @@
   <title>Muna Abuzaghleh | QA Portfolio</title>
 	
   <style>
-	  /* Quote Section */
-.quote-section {
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-  padding: 4rem 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.quote-container {
-  background: white;
-  max-width: 700px;
-  padding: 3rem 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.quote-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 1.5rem;
-  opacity: 0.7;
-}
-
-blockquote {
-  font-size: 1.8rem;
-  font-style: normal;
-  color: #1c3d5a; /* Darker blue-gray */
-  line-height: 1.6;
-  margin: 0 auto 1.8rem;
-  font-weight: 500;
-}
-
-blockquote strong {
-  color: #0077b5; /* Your highlight color */
-  font-weight: 700;
-}
-
-.quote-author {
-  font-size: 1.1rem;
-  color: #555;
-  font-style: italic;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
+	  
     body {
       font-family: 'Inter', sans-serif;
   background-color: #fff;
@@ -511,6 +458,43 @@ nav.col-md-3 {
   text-align: center;
   padding: 0 0.5rem;
 }
+.about-section {
+  background: #fff;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #334e68; /* dark blue-gray */
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0077b5; /* Your signature blue */
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about-container strong {
+  color: #0077b5; /* highlight important words */
+  font-weight: 700;
+}
+
+.about-container em {
+  font-style: italic;
+  color: #627d98; /* lighter blue-gray */
+}
 
 
 .colorlib-feature-sm {
@@ -605,23 +589,13 @@ nav.col-md-3 {
  </nav>
 
   <div class="main"> 
-	  <section id="quote" class="quote-section">
-  <div class="quote-container animate-box fade-in">
-    <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0077b5" aria-hidden="true">
-      <path d="M7.17 6.17A4 4 0 1 0 11 11v5a2 2 0 0 1-2 2H5v-2h4v-3a2 2 0 0 0-2-2H5v-2a4 4 0 0 1 4-4Zm10 0A4 4 0 1 0 21 11v5a2 2 0 0 1-2 2h-4v-2h4v-3a2 2 0 0 0-2-2h-2v-2a4 4 0 0 1 4-4Z"/>
-    </svg>
-    <blockquote>
-      Quality is never an accident; it is always the result of <strong>intelligent effort</strong>.
-    </blockquote>
-    <p class="quote-author">— John Ruskin</p>
-  </div>
-</section>
-
-	  
-    <section id="about">
+	   
+    <section id="about" class="about-section">
+  <div class="about-container animate-box fade-in">
       <h2>About Me</h2>
 <p>I'm a passionate <strong>Software QA Team Lead</strong> with <strong>10+ years</strong> of hands-on experience in testing strategies, automation frameworks, and cross-functional collaboration. I specialize in both <strong>manual</strong> and <strong>automated testing</strong> across SaaS, eCommerce, healthcare, and billing domains.</p>
-    </section>
+     </div>
+ </section>
 
     <section id="industries">
       <h2>Industries I've Worked With</h2>
