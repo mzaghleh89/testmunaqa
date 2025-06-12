@@ -16,9 +16,10 @@
       font-family: 'Inter', sans-serif;
   background-color: #fff;
   color: #333;
+ margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
     }
  #quote {
   margin-bottom: 2rem;
@@ -35,12 +36,12 @@
   box-shadow: 0 2px 4px rgba(0, 128, 0, 0.1);
 }
     nav {
-       width: 100%;
-  background-color: #3d9970;
+        width: 250px;
+  background-color: #3d9970; /* your updated green */
   color: white;
-  padding: 1rem;
-  text-align: center;
-  position: static;
+  padding: 2rem 1rem;
+  height: auto;
+  position: relative; /* remove fixed */
     }
     nav h1 {
       font-size: 1.5rem;
@@ -57,9 +58,8 @@
       color: #fff;
     }
     .main {
-      margin-left: 250px;
-      padding: 2rem;
-      flex: 1;
+  flex: 1;
+  padding: 2rem;
     }
     section {
       margin-bottom: 4rem;
@@ -301,9 +301,10 @@
   padding: 2rem;
 }
     .container {
-  max-width: 1140px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .row {
@@ -332,8 +333,6 @@ nav.col-md-3 {
 </head>
 <body>
   <div class="container">
-  <div class="row">
-        <nav class="col-md-3">
   <nav>
      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHCufRoWWra8Q/profile-displayphoto-shrink_400_400/B4EZRHeF0dHgAg-/0/1736365858713?e=1755129600&v=beta&t=A6a7ALxzzA7vazFObjpt03X74ucUOPOYmVt6CiOZNA4" alt="Muna Abuzaghleh" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 1rem;" />
     <h1>Muna Abuzaghleh</h1>
@@ -345,14 +344,9 @@ nav.col-md-3 {
     <a href="#education">Education</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
-  </nav>
  </nav>
 
   <div class="main">
-        <div class="main col-md-9">
-
-    <div class="content-container">
-
     <section id="quote">
   <div class="quote-container">
     <blockquote>
@@ -528,10 +522,7 @@ I am so glad to have worked with you and I wish to work together again in the fu
       <p>Email: <a href="mailto:abuzaghleh.muna@gmail.com">abuzaghleh.muna@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/mzaghleh" target="_blank">linkedin.com/in/mzaghleh</a></p>
     </section>
+    
       </div>
-  </div>
-      </div>
-  </div>
-</div>
 </body>
 </html>
