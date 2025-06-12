@@ -14,6 +14,54 @@
   <title>Muna Abuzaghleh | QA Portfolio</title>
 	
   <style>
+	  /* Quote Section */
+.quote-section {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container {
+  background: white;
+  max-width: 700px;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+blockquote {
+  font-size: 1.8rem;
+  font-style: normal;
+  color: #1c3d5a; /* Darker blue-gray */
+  line-height: 1.6;
+  margin: 0 auto 1.8rem;
+  font-weight: 500;
+}
+
+blockquote strong {
+  color: #0077b5; /* Your highlight color */
+  font-weight: 700;
+}
+
+.quote-author {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -29,54 +77,7 @@
   display: flex;
   justify-content: center;
     }
-	  #quote {
-  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-  padding: 3rem 1rem;
-  text-align: center;
-  border-radius: 12px;
-  margin: 2rem 0;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-.quote-modern {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
-  background: #f3f4f6; /* Light grey background */
-}
-
-.quote-box {
-  max-width: 800px;
-  background: #fff;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  position: relative;
-}
-
-.quote-icon {
-  font-size: 2.5rem;
-  color: #0077b5; /* Match LinkedIn / portfolio highlight */
-  margin-bottom: 1rem;
-}
-
-#quote blockquote {
-  font-size: 1.75rem;
-  font-style: italic;
-  color: #334e68; /* dark blue-gray */
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.5;
-  position: relative;
-  padding-left: 2.5rem;
-}
-.quote-author {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  color: #777;
-}
-
+	
     nav {
   width: 250px;
   position: sticky;
@@ -604,16 +605,19 @@ nav.col-md-3 {
     <a href="#contact">Contact</a>
  </nav>
 
-  <div class="main">  
-     <section id="quote" class="quote-modern">
-  	<div class="quote-box animate-box fade-in">
-    	<i class="fas fa-quote-left quote-icon"></i>
-    		<blockquote>
-    		  “Quality is never an accident; it is always the result of intelligent effort.”
-    		</blockquote>
-    		<p class="quote-author">— John Ruskin</p>
-  	</div>
-    </section>
+  <div class="main"> 
+	  <section id="quote" class="quote-section">
+  <div class="quote-container animate-box fade-in">
+    <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0077b5" aria-hidden="true">
+      <path d="M7.17 6.17A4 4 0 1 0 11 11v5a2 2 0 0 1-2 2H5v-2h4v-3a2 2 0 0 0-2-2H5v-2a4 4 0 0 1 4-4Zm10 0A4 4 0 1 0 21 11v5a2 2 0 0 1-2 2h-4v-2h4v-3a2 2 0 0 0-2-2h-2v-2a4 4 0 0 1 4-4Z"/>
+    </svg>
+    <blockquote>
+      Quality is never an accident; it is always the result of <strong>intelligent effort</strong>.
+    </blockquote>
+    <p class="quote-author">— John Ruskin</p>
+  </div>
+</section>
+
 	  
     <section id="about">
       <h2>About Me</h2>
