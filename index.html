@@ -35,7 +35,7 @@
     nav {
       width: 250px;
   height: 100vh;
-  background-color: #2e7d32; /* 🌿 Nice green */
+  background-color: #006d5b ; /* 🌿 Nice green */
   color: white;
   padding: 2rem 1rem;
   position: fixed;
@@ -301,9 +301,40 @@
   margin: 0 auto;
   padding: 2rem;
 }
+    .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.main.col-md-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+@media (max-width: 768px) {
+  nav.col-md-3,
+  .main.col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
   </style>
 </head>
 <body>
+  <div class="container">
+  <div class="row">
+        <nav class="col-md-3">
   <nav>
      <img src="https://media.licdn.com/dms/image/v2/D4E03AQHCufRoWWra8Q/profile-displayphoto-shrink_400_400/B4EZRHeF0dHgAg-/0/1736365858713?e=1755129600&v=beta&t=A6a7ALxzzA7vazFObjpt03X74ucUOPOYmVt6CiOZNA4" alt="Muna Abuzaghleh" style="width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 1rem;" />
     <h1>Muna Abuzaghleh</h1>
@@ -316,7 +347,11 @@
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
+ </nav>
+
   <div class="main">
+        <div class="main col-md-9">
+
     <div class="content-container">
 
     <section id="quote">
@@ -496,5 +531,8 @@ I am so glad to have worked with you and I wish to work together again in the fu
     </section>
       </div>
   </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
