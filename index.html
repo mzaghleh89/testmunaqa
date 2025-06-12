@@ -36,12 +36,15 @@
   box-shadow: 0 2px 4px rgba(0, 128, 0, 0.1);
 }
     nav {
-        width: 250px;
+       width: 250px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100vh;
   background-color: #3d9970; /* your updated green */
   color: white;
   padding: 2rem 1rem;
-  height: auto;
-  position: relative; /* remove fixed */
+  overflow-y: auto;
     }
     nav h1 {
       font-size: 1.5rem;
@@ -60,6 +63,7 @@
     .main {
   flex: 1;
   padding: 2rem;
+  overflow: hidden;
     }
     section {
       margin-bottom: 4rem;
