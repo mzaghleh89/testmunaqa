@@ -452,7 +452,7 @@ nav.col-md-3 {
     <section id="skills">
   <h2>Skills</h2>
   <div class="row">
-    <div class="col-md-6 animate-box fade-left">
+    <div class="col-md-6 animate-box fade-left visible">
       <div class="progress-wrap">
         <h3>Java</h3>
         <div class="progress"><div class="progress-bar color-1" style="width: 85%;"><span>85%</span></div></div>
@@ -475,7 +475,7 @@ nav.col-md-3 {
       </div>
     </div>
 
-    <div class="col-md-6 animate-box fade-right">
+    <div class="col-md-6 animate-box fade-right visible">
       <div class="progress-wrap">
         <h3>Python</h3>
         <div class="progress"><div class="progress-bar color-2" style="width: 80%;"><span>80%</span></div></div>
@@ -588,5 +588,20 @@ I am so glad to have worked with you and I wish to work together again in the fu
     </section>
     
       </div>
+
+    <script>
+  const animatedElements = document.querySelectorAll('.animate-box');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  animatedElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
